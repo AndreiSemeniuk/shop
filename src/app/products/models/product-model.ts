@@ -1,12 +1,19 @@
 import { Category } from "../components/first/first.component";
 
 export class ProductModel {
+
   name: string = "";
+
   description: string = "";
+
   price: number = 0;
+
   category: Category = Category.Undefined;
+
   isAvailable: boolean = false;
+
   madeFrom: string[] = [];
+  
   shippingTo: string[] = [];
   
 

@@ -1,0 +1,25 @@
+<p>cart-list works!</p>
+
+<div *ngIf="carts!=null; else elseBlock">
+
+    <div *ngFor="let item of carts; trackBy: trackByItems">
+        ({{item.name}}) {{item.name}}
+
+        <ul>
+            <li *ngFor="let cart of carts; ">
+            {{cart.name}}
+            {{cart.category}}
+            {{cart.description}}
+            {{cart.isAvailable}}
+            {{cart.price}}
+            {{cart.madeFrom}}
+            {{cart.shippingTo}}
+            </li>
+            </ul>
+
+      </div>
+
+
+
+</div>
+<ng-template #elseBlock>Cart is empty</ng-template>
