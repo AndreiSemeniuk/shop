@@ -2,6 +2,7 @@
 
 <div *ngIf="carts!=null; else elseBlock">
 
+  <!-- не понял этого вывода -->
     <div *ngFor="let item of carts; trackBy: trackByItems">
         ({{item.name}}) {{item.name}}
 

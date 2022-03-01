@@ -10,6 +10,7 @@ import { ProductModel } from "../../../products/models/product-model";
 })
 export class CartListComponent implements OnInit {
 
+  // обычно этот тип должен расширять тип ProductModel, например количеством купленого товара
   carts: ProductModel[] = [new ProductModel ("Coca-Cola","Wonderfull drink", 2,Category.NonFiction,
   true,['USA', 'China'], ['Madagascar', 'Italy']),
   new ProductModel ("Lays","Amazing Chips", 1,Category.Fiction,
