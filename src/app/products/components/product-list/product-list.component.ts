@@ -11,18 +11,18 @@ import { Category } from '../first/first.component';
 })
 export class ProductListComponent implements OnInit {
 
-  products: ProductModel[] = [new ProductModel ("","", 0,Category.Undefined,
-  false,['', ''], ['', ''])];
+  products: ProductModel[] = [new ProductModel ("","", 0, Category.Undefined,
+  false, ['', ''], ['', ''])];
 
   constructor(private productService: ProductService) { }
-  
+
 
   ngOnInit(): void {
     this.getProducts();
   }
 
   getProducts(){
-   this.products=this.productService.getProducts();
+   this.products = this.productService.getProducts();
   }
 
 }
